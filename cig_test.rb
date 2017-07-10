@@ -14,6 +14,17 @@ class TestArr < Minitest::Test
 	end
 
 
+	def test_1_0ff
+		our_tikket = "3422"
+		winning_tikkets = ["3322"]
+		assert_equal([], find_winner(our_tikket, winning_tikkets))
+	end	
+
+
+
+
+
+
 	# def test_winner
 	# 	my_num = "1234" 
 	# 	nums = ["1423", "4321", "5455"]
