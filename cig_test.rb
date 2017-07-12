@@ -7,29 +7,21 @@ require_relative "no_cig_1.rb"
 class TestArr < Minitest::Test
 
 
-	def test_empty #no winning tix
-		our_tikket = "3421"
-		winning_tikkets = []
-		assert_equal([], find_winner(our_tikket, winning_tikkets))
-	end
+	# def test_empty # no winning tix
+	# 	our_tikket = "3422"
+	# 	winning_tikket = []
+	# 	assert_equal([], find_winner(our_tikket, winning_tikket))
+	# end
 
 
-	def test_1_0ff
-		our_tikket = "3422"
-		winning_tikkets = ["3322"]
-		assert_equal([], find_winner(our_tikket, winning_tikkets))
+                                                 #1234
+	def test_1_off       # off by one num ie.     #1224 
+	 	our_tikket = "3422"
+	 	winning_tikket = ["3421"]
+		assert_equal(true, offby_1(our_tikket, winning_tikket))
 	end	
 
 
-
-
-
-
-	# def test_winner
-	# 	my_num = "1234" 
-	# 	nums = ["1423", "4321", "5455"]
-	# 	assert_equal([], grand_bash(bash_nums, my_num))
-	# end  	
 
 
 
