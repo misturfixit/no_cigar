@@ -28,13 +28,28 @@ class TestArr < Minitest::Test
 	end	
 
 
+	def test_same_false
+		our_tikket = "3422"
+		winning_tikket = "3422"
+		assert_equal(false, offby_1(our_tikket, winning_tikket))
+	end	
+
+
 	def test_1_off_multi
 		our_tikket = "3422"
-		winning_tikket = ["4321", "1234", "4455", "2322", "1423"]
-	#	p "winnin numbs are #{find_winner}"
-	#	p "matchin nums arrr #{offby_1}"
-		assert_equal(true, offby_1(our_tikket, winning_tikket))
+		winning_tikket = ["3428", "1234", "7422", "2322"]
+		#puts "winnin numbs are #{winning_tikket}"
+		#puts "matchin nums arrr #{matchin}"
+		assert_equal(["3428","7422"], win_arry(our_tikket, winning_tikket))
 
+	end	
+
+
+
+	def test_no_winner
+		our_tikket = "3422"
+		winning_tikket = ["5678", "9854", "6548", "9518"]
+		assert_equal([], win_arry(our_tikket, winning_tikket))
 	end	
 
 

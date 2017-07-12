@@ -19,40 +19,44 @@ def offby_1(our_tikket, winning_tikkets)
 			
 			matching_nums = 0
 
-		if our_tikket [0] == winning_tikkets[0]
+	if our_tikket[0] == winning_tikkets[0]
 			matching_nums += 1	
-		else 0		
+			
 	end
-		if	our_tikket [1] == winning_tikkets[1]
+	if	our_tikket[1] == winning_tikkets[1]
 			matching_nums += 1
-		else 0
+		
 	end
-		if our_tikket [2] == winning_tikkets[2]
+	if our_tikket[2] == winning_tikkets[2]
 			matching_nums += 1
-		else 0	
+			
 	end
-		if our_tikket [3] == winning_tikkets[3]
+	if our_tikket[3] == winning_tikkets[3]
 			matching_nums += 1
-		else 0
+	
 	end		
 
-		if matching_nums == 3
+	if matching_nums == 3
 			true
+	else
+			false		
 	end
 
+end
+def win_arry(our_tikket, winning_tikket)
 
-	    def win_arry(our_tikket, winning_tikket)
-
-	    		matchin = []
+	    	matchin = []
 	    	
-	    		winn.each do |i|
+	winning_tikket.each do |i|
 
-	    	if offby_1(winning_tikket, our_tikket) == true
+		 if offby_1(i, our_tikket) == true
 	    	
-	    		offby_1 << matchin  
-		end    	
+	    	 matchin << i  
+	 	 end    	
+		# win_arry
 	end	
-  end
+	matchin  
+
 end
 
 
