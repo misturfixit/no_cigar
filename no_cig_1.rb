@@ -16,9 +16,11 @@ matches
 end
 
 def offby_1(our_tikket, winning_tikkets)
+			
 			matching_nums = 0
+
 		if our_tikket [0] == winning_tikkets[0]
-				matching_nums += 1	
+			matching_nums += 1	
 		else 0		
 	end
 		if	our_tikket [1] == winning_tikkets[1]
@@ -38,6 +40,19 @@ def offby_1(our_tikket, winning_tikkets)
 			true
 	end
 
+
+	    def win_arry(our_tikket, winning_tikket)
+
+	    		matchin = []
+	    	
+	    		winn.each do |i|
+
+	    	if offby_1(winning_tikket, our_tikket) == true
+	    	
+	    		offby_1 << matchin  
+		end    	
+	end	
+  end
 end
 
 
