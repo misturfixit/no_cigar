@@ -6,7 +6,7 @@ def find_winner(our_tikket, winning_tikkets)
 		winning_tikkets.each do |winning_tikket|
 	
 	if	winning_tikket == our_tikket
-	    our_tikket >> matches  
+	    matches << our_tikket 
 	end
 
   end
@@ -17,19 +17,19 @@ end
 
 def offby_1(our_tikket, winning_tikkets)
 			matching_nums = 0
-		if our_tikket[0] == winning_tikkets[0]
+		if our_tikket [0] == winning_tikkets[0]
 				matching_nums += 1	
 		else 0		
 	end
-		if	our_tikket[1] == winning_tikkets[1]
+		if	our_tikket [1] == winning_tikkets[1]
 			matching_nums += 1
 		else 0
 	end
-		if our_tikket[2] == winning_tikkets[2]
+		if our_tikket [2] == winning_tikkets[2]
 			matching_nums += 1
 		else 0	
 	end
-		if our_tikket[3] == winning_tikkets[3]
+		if our_tikket [3] == winning_tikkets[3]
 			matching_nums += 1
 		else 0
 	end		
