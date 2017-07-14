@@ -41,9 +41,7 @@ class TestArr < Minitest::Test
 		#puts "winnin numbs are #{winning_tikket}"
 		#puts "matchin nums arrr #{matchin}"
 		assert_equal(["3428","7422"], win_arry(our_tikket, winning_tikket))
-
 	end	
-
 
 
 	def test_no_winner
@@ -52,5 +50,11 @@ class TestArr < Minitest::Test
 		assert_equal([], win_arry(our_tikket, winning_tikket))
 	end	
 
+
+	def test_sevnum_winner
+		our_tikket = "1234567"
+		winning_tikket = ["1234567", "5421367", "9463125"]		
+		assert_equal(["1234567"], find_winner(our_tikket, winning_tikket))	
+	end				 
 
 end	
