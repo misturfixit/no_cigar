@@ -47,10 +47,10 @@ def win_arry(our_tikket, winning_tikket)
 	    	
 	winning_tikket.each do |i|
 
-		 if offby_1(i, our_tikket) == true
+	if offby_1(i, our_tikket) == true
 	    	
 	    	 matchin << i  
-	 	 end    	
+	end    	
 		# win_arry
 	end	
 	matchin  
@@ -81,6 +81,7 @@ def sevnum(our_tikket, winning_tikkets)
 	end
 	if our_tikket[6] == winning_tikkets[6]
 			matching_nums
+	end
 
 	if 		matching_nums == 6
 				true
@@ -89,18 +90,20 @@ def sevnum(our_tikket, winning_tikkets)
 	end
 end	
 
-	# def sevnum_arry(our_tikket, winning_tikket)
+def sevnum_arry(our_tikket, winning_tikket)
 			
-	# 		 matchin = []
+			 matching = []
 	    	
-	# 	winning_tikket.each do |i|
+		winning_tikket.each do |n|
 
-	# if offby_1(i, our_tikket) == true
+	if sevnum(n, our_tikket) == true
 	    	
-	#     	 matchin << i  
-	# end    	
-	# matchin  	
+	    	 matching << n  
+	end    	
+	end	 	
+  matching 
 end	
+
 	
 
 

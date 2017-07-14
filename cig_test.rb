@@ -57,4 +57,20 @@ class TestArr < Minitest::Test
 		assert_equal(["1234567"], find_winner(our_tikket, winning_tikket))	
 	end				 
 
+	def test_oneoffsevn
+		our_tikket = "1234567"
+		winning_tikket = ["1234566", "9876543"]
+		assert_equal(["1234566"], sevnum_arry(our_tikket, winning_tikket))
+	end
+
+
+	def test_lesthn_all
+		our_tikket = "12345"
+		winning_tikket = ["12345", "852456", "159"]
+		assert_equal(["12345"], sevnum_arry(our_tikket, winning_tikket))
+	end	
+
 end	
+
+
+
