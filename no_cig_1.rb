@@ -104,14 +104,28 @@ def sevnum_arry(our_tikket, winning_tikket)
   matching 
 end	
 
+
+
+def flexible?(mynew_tik, winnner_tik)
+	count = 0
+	index = 0
+	mynew_tik.length.times do
+#	p "#{mynew_tik[index]} my tikkthere"
+#	p "#{winnner_tik[index]} daa winna"	
+
+		if mynew_tik[index] == winnner_tik[index]
+		   count += 1	
+		end
+	index += 1
+
+	end		
+	
+		 count == mynew_tik.length - 1
+		
 	
 
 
-
-
-
-
-
+end
 	
 
 

@@ -70,6 +70,20 @@ class TestArr < Minitest::Test
 		assert_equal(["12345"], sevnum_arry(our_tikket, winning_tikket))
 	end	
 
+
+	def test_flexi_true
+		mynew_tik = "6789"
+	    winnner_tik = "6788"
+	    assert_equal(true, flexible?(mynew_tik, winnner_tik)) 
+	end
+	
+	def test_new_7
+	 	mynew_tik = "1234567"
+	 	winnner_tik = "1234561"
+	 	assert_equal(true, flexible?(mynew_tik, winnner_tik))
+	end	 
+
+
 end	
 
 
