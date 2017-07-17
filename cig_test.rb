@@ -65,7 +65,7 @@ class TestArr < Minitest::Test
 
 
 	def test_lesthn_all
-		our_tikket = "12345"
+		our_tikket = "12349"
 		winning_tikket = ["12345", "852456", "159"]
 		assert_equal(["12345"], sevnum_arry(our_tikket, winning_tikket))
 	end	
@@ -83,6 +83,11 @@ class TestArr < Minitest::Test
 	 	assert_equal(true, flexible?(mynew_tik, winnner_tik))
 	end	 
 
+	def test_4_1_return
+		mynew_tik = "5432"
+		winnner_tik = ["5439", "5432", "5678"]
+		assert_equal(["5439"], sevnum_arry(mynew_tik, winnner_tik))
+	end	
 
 end	
 

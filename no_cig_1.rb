@@ -96,7 +96,7 @@ def sevnum_arry(our_tikket, winning_tikket)
 	    	
 		winning_tikket.each do |n|
 
-	if sevnum(n, our_tikket) == true
+	if flexible?(n, our_tikket) == true
 	    	
 	    	 matching << n  
 	end    	
